@@ -1,0 +1,50 @@
+@use '../settings/config' as c;
+
+.Contact {
+    border-top: 1px solid rgba(c.$base-white, 0.1);
+    border-bottom: 1px solid rgba(c.$base-white, 0.1);
+    &__wrap {
+        display: grid;
+        gap: c.rem(40);
+        padding: c.rem(60) 0;
+
+        @media (min-width: c.$base-width-md) {
+            padding: c.rem(60) c.rem(40);
+        }
+        @media (min-width: c.$base-container) {
+            align-items: center;
+            grid-template-columns: min-content max-content auto;
+        }
+    }
+    &__title {
+        &__text {
+            display: flex;
+            align-items: flex-start;
+            gap: c.rem(10);
+            font-size: c.rem(32);
+            font-family: c.$base-font-redhat;
+            &:before {
+                content: "";
+                display: block;
+                width: c.rem(16);
+                height: c.rem(16);
+                background: url("../../src/img/common/icon_mail.svg") no-repeat;
+                background-size: cover cover;
+            }
+        }
+    }
+    &__desc {
+        &__text {
+            line-height: 1.5;
+        }
+    }
+    .ContactBtn {
+        justify-content: center;
+        @media (min-width: c.$base-width-md) {
+            justify-content: flex-start;
+        }
+        @media (min-width: c.$base-container) {
+            justify-content: flex-end;
+        }
+    }
+}

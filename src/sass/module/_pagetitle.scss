@@ -1,0 +1,22 @@
+@use '../settings/config' as c;
+
+.PageTitle {
+    display: flex;
+    flex-direction: column;
+    margin-top: clamp(6.25rem, 3.03rem + 13.74vw, 9.625rem);
+    margin-bottom: clamp(3.75rem, 0.172rem + 15.27vw, 7.5rem);
+    gap: c.rem(20);
+    padding: 0 c.rem(20) clamp(2.5rem, 1.307rem + 5.09vw, 3.75rem) c.rem(20);
+    border-bottom: 1px solid rgba(217,217,217, 0.1);
+    &__text {
+        font-family: c.$base-font-redhat;
+        font-size: clamp(2.875rem, 1.802rem + 4.58vw, 4rem);
+    }
+    &__ja {
+        font-size: c.rem(14);
+    }
+
+    @media (min-width: c.$base-width-lg) {
+        padding-inline: c.rem(40);
+    }
+}

@@ -1,0 +1,16 @@
+@use '../settings/config' as c;
+
+.ServicesArc {
+    .Base {
+        max-width: c.rem(1412);
+    }
+    .Services {
+        &__items {
+            margin-bottom: clamp(3.75rem, 0.172rem + 15.27vw, 7.5rem);
+        }
+    }
+    .MoreBtn {
+        margin-bottom: clamp(10rem, 0.458rem + 40.71vw, 20rem);
+        justify-content: center;
+    }
+}

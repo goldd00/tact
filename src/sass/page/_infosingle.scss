@@ -1,0 +1,70 @@
+@use '../settings/config' as c;
+.InfoSingle {
+    &__wrap.Base {
+        max-width: c.rem(1100);
+        margin-bottom: clamp(0rem, -28.626rem + 122.14vw, 30rem);
+    }
+    .PageTitle {
+        margin-bottom: 0;
+    }
+    &__con {
+        padding-block: c.rem(60) c.rem(120);
+        border-top: 1px solid rgba(c.$base-white, 0.1);
+        border-bottom: 1px solid rgba(c.$base-white, 0.1);
+        &__title {
+            margin-bottom: c.rem(32);
+            font-size: c.rem(32);
+            letter-spacing: 0.08em;
+            line-height: 1.6;
+        }
+        &__desc {
+            word-break: break-all;
+            p {
+                letter-spacing: 0.08em;
+                line-height: 2; 
+            }
+            a {
+                text-decoration: underline;
+                color: rgba(55, 136, 179, 1);
+            }
+            h2 {
+                font-size: c.rem(24);
+                letter-spacing: 0.08em;
+                line-height: 1.6;
+            }
+            img {
+                max-width: 100%;
+                margin-block: c.rem(32);
+            }
+        }
+    }
+    &__back {
+        &--top {
+            padding-block: clamp(1.25rem, 0.534rem + 3.05vw, 2rem);
+        }
+        &--bottom {
+            padding-block: clamp(1.25rem, -0.42rem + 7.12vw, 3rem);
+        }
+        &__link {
+            display: inline-flex;
+            align-items: center;
+            gap: c.rem(12);
+            font-family: c.$base-font-redhat;
+            font-size: c.rem(12);
+            transition: opacity .26s ease;
+            &:hover,
+            &:active {
+                opacity: 0.6;
+            }
+            &:before {
+                content: "";
+                display: block;
+                width: c.rem(40);
+                height: c.rem(40);
+                background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle opacity='0.1' cx='20' cy='20' r='19.5' transform='matrix(-1 0 0 1 40 0)' stroke='white'/%3E%3Cpath d='M21 15L17 19.5L21 24' stroke='white'/%3E%3C/svg%3E%0A");
+                background-size: cover;
+                background-position: center;
+            }
+        }
+    }
+}

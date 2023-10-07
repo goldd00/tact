@@ -1,0 +1,48 @@
+@use '../settings/config' as c;
+
+.ContactBtn {
+    container-type: inline-size;
+    width: 100%;
+    display: flex;
+    &__link {
+        display: grid;
+        align-items: center;
+        grid-template-columns: c.rem(146) auto;
+        gap: c.rem(40);
+        padding: c.rem(12) c.rem(12) c.rem(12) c.rem(40);
+        border: 1px solid rgba(c.$base-white, 0.1);
+        border-radius: c.rem(60);
+        font-family: c.$base-font-redhat;
+        transition: background 0.26s ease;
+
+        @container (max-width: 320px) {
+            grid-template-columns: 1fr auto;
+        }
+        &:hover,
+        &:active {
+            background: rgba(c.$base-white, 0.1);
+            .ContactBtn__link__icon {
+                scale: .12;
+                background: c.$base-gray;
+                &__img {
+                    opacity: 0;
+                }
+            }
+        }
+        &__icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: c.rem(80);
+            min-width: c.rem(80);
+            height: c.rem(80);
+            border-radius: 50%;
+            background: rgba(c.$base-white, 0.1);
+            transition: all 0.26s ease;
+            &__img {
+                width: c.rem(16);
+                height: c.rem(16);
+            }
+        }
+    }
+}

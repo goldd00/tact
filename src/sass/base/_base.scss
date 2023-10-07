@@ -1,0 +1,56 @@
+@use '../settings/config' as c;
+
+a {
+    text-decoration: none;
+}
+img {
+    vertical-align: top;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    color: c.$base-white;
+    font-family: c.$base-font-noto;
+    letter-spacing: 0.04em;
+}
+body.active {
+    overflow: hidden;
+}
+.Wrap {
+    position: relative;
+    overflow: hidden;
+}
+.Base {
+    max-width: c.$base-container;
+    margin-inline: auto;
+    &__wrap {
+        margin-inline: c.rem(20);
+
+        @media (min-width: c.$base-width-md) {
+            padding-right: c.rem(20);
+            margin-right: c.rem(100);
+        }
+        @media (min-width: c.$base-width-lg) {
+            padding-right: c.rem(40);
+            margin-left: c.rem(40);
+        }
+    }
+}
+.page,
+.single,
+.archive {
+    .Base {
+        &__wrap {
+            @media (min-width: c.$base-width-md) {
+                margin-right: 0;
+            }
+        }
+    }
+}
+.debug {
+    resize: horizontal;
+    overflow: auto;
+    border: 1px dashed #ccc;
+    background: #111;
+}

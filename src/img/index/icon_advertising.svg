@@ -1,0 +1,21 @@
+<svg width="291" height="100" viewBox="0 0 291 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path opacity="0.3" d="M10 49.5L58 10L110.5 49.5L171 20L220.5 10L269 48.5" stroke="white"/>
+<path opacity="0.3" d="M173 22L218.5 48.5" stroke="white"/>
+<path opacity="0.3" d="M271 50.5H220.5" stroke="white"/>
+<path opacity="0.3" d="M173 79.5L218.5 52" stroke="white"/>
+<path opacity="0.3" d="M10 52L58 91.5L110.5 52L171 81.5L220.5 91.5L269 53" stroke="white"/>
+<rect x="251.375" y="30.5" width="39" height="39" rx="19.5" fill="#010013" stroke="white"/>
+<rect x="90.625" y="30.5" width="39" height="39" rx="19.5" fill="#010013" stroke="white"/>
+<rect x="0.625" y="40.5" width="19" height="19" rx="9.5" fill="#010013" stroke="white"/>
+<rect x="48.125" width="20" height="20" rx="10" fill="#010013"/>
+<rect x="48.625" y="0.5" width="19" height="19" rx="9.5" stroke="white" stroke-opacity="0.3"/>
+<rect x="48.625" y="80.5" width="19" height="19" rx="9.5" fill="#010013" stroke="white"/>
+<rect x="150.375" y="0.5" width="39" height="39" rx="19.5" fill="#010013" stroke="white"/>
+<rect x="149.875" y="60" width="40" height="40" rx="20" fill="#010013"/>
+<rect x="150.375" y="60.5" width="39" height="39" rx="19.5" stroke="white" stroke-opacity="0.3"/>
+<rect x="210" width="20" height="20" rx="10" fill="#010013"/>
+<rect x="210.5" y="0.5" width="19" height="19" rx="9.5" stroke="white" stroke-opacity="0.2"/>
+<rect x="210.375" y="40.5" width="19" height="19" rx="9.5" fill="#010013" stroke="white"/>
+<rect x="209.875" y="80" width="20" height="20" rx="10" fill="#010013"/>
+<rect x="210.375" y="80.5" width="19" height="19" rx="9.5" stroke="white" stroke-opacity="0.2"/>
+</svg>

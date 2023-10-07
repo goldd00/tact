@@ -1,0 +1,120 @@
+@use '../settings/config' as c;
+
+.StickyBar {
+    display: none;
+    @media (min-width: #{c.$base-width-md}) {
+        position: fixed;
+        opacity: 0;
+        right: 0;
+        bottom: 0;
+        display: block;
+        width: clamp(5rem, 3.807rem + 5.09vw, 6.25rem);
+        height: 100%;
+    }
+    &__btn {
+        @media (min-width: #{c.$base-width-md}) {
+            position: relative;
+            display: grid;
+            gap: c.rem(10);
+            padding-block: c.rem(5);
+        }
+        &.active {
+            .StickyBar {
+                &__icon {
+                    @media (min-width: #{c.$base-width-md}) {
+                        background: rgba(c.$base-white, 1);
+                    }
+                }
+            }
+        }
+        &:hover {
+            &:before,
+            &:after {
+                @media (min-width: #{c.$base-width-md}) {
+                    position: absolute;
+                    content: "";
+                    width: c.rem(20);
+                    height: c.rem(2);
+                    background: rgba(c.$base-white, 1);
+                }
+            }
+            &:before {
+                @media (min-width: #{c.$base-width-md}) {
+                    top: c.rem(5);
+                }
+            }
+            &:after {
+                @media (min-width: #{c.$base-width-md}) {
+                    bottom: c.rem(5);
+                }
+            }
+            .StickyBar {
+                &__label {
+                    @media (min-width: #{c.$base-width-md}) {
+                        display: block;
+                        width: c.rem(200);
+                        position: absolute;
+                        top: 50%;
+                        left: c.rem(-220);
+                        transform: translateY(-50%);
+                        font-size: c.rem(12);
+                        font-family: c.$base-font-redhat;
+                        text-align: right;
+                    }
+                }
+            }
+        }
+    }
+    &__label {
+        @media (min-width: #{c.$base-width-md}) {
+            display: none;
+        }
+    }
+    &__icon {
+        @media (min-width: #{c.$base-width-md}) {
+            display: block;
+            width: c.rem(20);
+            height: c.rem(1);
+            background: rgba(c.$base-white, 0.3);
+            animation: 1s cubic-bezier(0.37, 0, 0.63, 1) 0s infinite alternate-reverse none running wave;
+            transform-origin: right center;
+        }
+        @keyframes wave {
+            0% {
+                transform: scaleX(1);
+            }
+            100% {
+                transform: scaleX(0.2);
+            }
+        }
+    }
+    &__wrap {
+        @media (min-width: #{c.$base-width-md}) {
+            display: grid;
+            grid-template-rows: 1fr max-content 1fr;
+            justify-content: center;
+            height: 100%;
+        }
+    }
+    &__wave {
+        @media (min-width: #{c.$base-width-md}) {
+            grid-row: 2/3;
+            cursor: pointer;
+        }
+    }
+    &__copy {
+        @media (min-width: #{c.$base-width-md}) {
+            grid-row: 3/3;
+            margin: auto auto 2.5rem;
+        }
+        &__text {
+            @media (min-width: #{c.$base-width-md}) {
+                font-family: c.$base-font-redhat;
+                font-size: c.rem(10);
+                -ms-writing-mode: tb-rl;
+                writing-mode: vertical-rl;
+                letter-spacing: 0.08em;
+            }
+        }
+    }
+}

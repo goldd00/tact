@@ -1,0 +1,86 @@
+@use '../settings/config' as c;
+
+.Footer {
+    margin-top: c.rem(160);
+    &__catch {
+        margin-bottom: c.rem(60);
+        &__img {
+            max-width: 100%;
+        }
+    }
+    &__nav {
+        margin-bottom: clamp(3.75rem, 2.557rem + 5.09vw, 5rem);
+        &__items {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            gap: c.rem(32);
+            @media (min-width: c.$base-width-md) {
+                max-width: 460px;
+                flex-direction: row;
+            }
+        }
+        &__link {
+            font-size: c.rem(14);
+            font-family: c.$base-font-redhat;
+            transition: opacity 0.26s ease;
+            &:hover {
+                opacity: 0.6;
+            }
+        }
+    }
+    &__logo {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        gap: c.rem(20);
+        &__title {
+            &__img {
+                transition: opacity 0.26s ease;
+                &:hover {
+                    opacity: 0.3;
+                }
+            }
+        }
+        &__catch {
+            &__text {
+                font-size: c.rem(10);
+                font-family: c.$base-font-redhat;
+                line-height: 1.2;
+            }
+        }
+    }
+    &__copy {
+        position: relative;
+        margin-bottom: c.rem(78);
+        text-align: center;
+        font-size: c.rem(10);
+        font-family: c.$base-font-redhat;
+        @media (min-width: c.$base-width-md) {
+            margin-bottom: c.rem(30);
+        }
+        svg {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: c.rem(-78);
+            @media (min-width: c.$base-width-md) {
+                bottom: c.rem(-30);
+            }
+        }
+    }
+    &__info {
+        margin-bottom: c.rem(124);
+        @media (min-width: c.$base-width-lg) {
+            display: flex;
+            align-items: flex-end;
+        }
+    }
+    .ContactBtn {
+        display: none;
+        @media (min-width: c.$base-width-lg) {
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+}

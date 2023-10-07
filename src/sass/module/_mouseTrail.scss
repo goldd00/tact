@@ -1,0 +1,23 @@
+.MouseTrail {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    opacity: 0;
+    animation: mouseTrail .3s ease both;
+    animation-delay: 1s;
+    line {
+        stroke: #fff;
+        stroke-width: 2;
+    }
+}
+@keyframes mouseTrail {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,153 @@
+@use '../settings/config' as c;
+
+.AboutSingle {
+    &__outer {
+        // margin-bottom: c.rem(480);
+        border-bottom: 1px solid rgba(c.$base-white, 0.1);
+    }
+    &__wrap.Base {
+        max-width: c.rem(1100);
+    }
+    &__section {
+        border-bottom: 1px solid rgba(c.$base-white, 0.1);
+        padding-block: clamp(3.75rem, 0.172rem + 15.27vw, 7.5rem);
+
+        @media (min-width: c.$base-width-lg) {
+            display: flex;
+        }
+        &--notPd {
+            padding-top: 0;
+        }
+        &--notBdr {
+            border-bottom: 0;
+        }
+    }
+    &__desc {
+        @media (min-width: c.$base-width-lg) {
+            flex: 1;
+        }
+    }
+    &__item {
+        padding-block: c.rem(40);
+
+        &:first-child {
+            padding-top: 0;
+        }
+
+        &:not(:last-child) {
+            border-bottom: 1px solid rgba(c.$base-white, 0.1);
+        }
+    }
+    &__intro {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: c.rem(30);
+
+        @media (min-width: c.$base-width-md) {
+            align-items: center;
+            flex-direction: row;
+        }
+        &__logo {
+            display: flex;
+            align-items: center;
+            gap: clamp(1.25rem, 0.647rem + 2.57vw, 2.5rem);
+            &:after {
+                content: "=";
+                font-size: c.rem(24);
+                color: rgba(c.$base-white, 0.6);
+                font-family: c.$base-font-redhat;
+            }
+        }
+        &__contents {
+            display: flex;
+            flex-direction: column;
+            gap: c.rem(12);
+        }
+        &__text {
+            display: flex;
+            flex-wrap: wrap;
+            font-size: c.rem(14);
+            gap: clamp(0.25rem, -0.227rem + 2.04vw, 0.75rem);
+        }
+        &__items {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        &__item {
+            &:not(:last-child) {
+                &:after {
+                    content: "+";
+                    color: rgba(c.$base-white, 0.6);
+                    font-family: c.$base-font-redhat;
+                    margin-inline: clamp(0.25rem, -0.227rem + 2.04vw, 0.75rem);
+                }
+            }
+        }
+    }
+    &__title {
+        margin-bottom: c.rem(20);
+        font-size: c.rem(14);
+        font-family: c.$base-font-redhat;
+        @media (min-width: c.$base-width-lg) {
+            min-width: c.rem(250);
+            margin-top: c.rem(12);
+        }
+        &__text {
+            display: flex;
+            align-items: baseline;
+            &:before {
+                content: "[";
+            }
+            &:after {
+                content: "]";
+            }
+        }
+        &__circle {
+            display: flex;
+            align-items: center;
+            padding-inline: c.rem(8);
+            &:before {
+                content: "";
+                display: block;
+                width: c.rem(8);
+                height: c.rem(8);
+                margin-right: c.rem(4);
+                border-radius: 50%;
+                background: c.$base-white;
+            }
+        }
+    }
+    &__msg {
+        display: flex;
+        flex-direction: column;
+        gap: c.rem(32);
+        &__title {
+            font-size: clamp(1.25rem, 0.296rem + 4.07vw, 2.25rem);
+            line-height: 1.6;
+
+            br {
+                display: none;
+
+                @media (min-width: c.$base-width-md) {
+                    display: block;
+                }
+            }
+        }
+        &__text {
+            font-size: c.rem(14);
+            line-height: 2;
+            letter-spacing: 0.08em;
+            &--en {
+                font-family: c.$base-font-redhat;
+            }
+        }
+    }
+    .Profile {
+        max-width: 100%;
+        padding-block: clamp(3.75rem, 0.172rem + 15.27vw, 7.5rem);
+        .Title {
+            margin-bottom: c.rem(60);
+        }
+    }
+}

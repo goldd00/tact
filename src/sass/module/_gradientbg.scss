@@ -1,0 +1,50 @@
+@use '../settings/config' as c;
+
+.Gradientbg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100lvh;
+    background: c.$base-blue;
+    // background: pink;
+    z-index: -2;
+    overflow: visible;
+    &__wrap {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        max-width: c.$base-container;
+        margin-inline: auto;
+    }
+    &__topLeft {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 60%;
+        background: radial-gradient(#3788B3 80%, c.$base-blue 30%, rgba(255,255,255,0) 10%);
+        aspect-ratio: 1/1;
+        object-fit: contain;
+        opacity: 0.5;
+        backface-visibility: hidden;
+        perspective: 1000;
+        border-radius: 50%;
+        filter: blur(180px);
+        will-change: transform;
+    }
+    &__bottomRight {
+        position: absolute;
+        bottom: -50%;
+        right: -10%;
+        height: 120%;
+        background: radial-gradient(#591F7D 80%, c.$base-blue 30%, rgba(255,255,255,0) 10%);
+        aspect-ratio: 1/1;
+        object-fit: contain;
+        opacity: 0.5;
+        backface-visibility: hidden;
+        perspective: 1000;
+        border-radius: 50%;
+        filter: blur(180px);
+        will-change: transform;
+    }
+}

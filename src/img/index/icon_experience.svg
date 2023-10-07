@@ -1,0 +1,18 @@
+<svg width="291" height="102" viewBox="0 0 291 102" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="1.375" y="31.5" width="39" height="39" stroke="white"/>
+<rect opacity="0.1" x="151.5" y="31.5" width="39" height="39" stroke="white"/>
+<path opacity="0.3" d="M1 31L51 1" stroke="white"/>
+<path opacity="0.3" d="M41 31L140 2" stroke="white"/>
+<path opacity="0.3" d="M1 71L51 101" stroke="white"/>
+<path opacity="0.3" d="M41 71L140 100" stroke="white"/>
+<path opacity="0.3" d="M191 31L141 1" stroke="white"/>
+<path opacity="0.3" d="M151 31L52 2" stroke="white"/>
+<path opacity="0.3" d="M191 71L141 101" stroke="white"/>
+<path opacity="0.3" d="M151 71L52 100" stroke="white"/>
+<path opacity="0.3" d="M151 31L201 1" stroke="white"/>
+<path opacity="0.3" d="M191 31L290 2" stroke="white"/>
+<path opacity="0.3" d="M151 71L201 101" stroke="white"/>
+<path opacity="0.3" d="M191 71L290 100" stroke="white"/>
+<rect opacity="0.1" x="51.375" y="1.5" width="89" height="99" stroke="white"/>
+<rect x="200.625" y="1.5" width="89" height="99" stroke="white"/>
+</svg>
