@@ -662,7 +662,7 @@ const scrollAnimation = () => {
                 x: 0,
                 autoAlpha: 1,
                 delay: 0.6,
-                duration: 1.5,
+                duration: 1.2,
                 ease: 'power2.InOut'
             }
         ),
@@ -679,7 +679,7 @@ const scrollAnimation = () => {
                 x: 0,
                 autoAlpha: 1,
                 delay: 0.6,
-                duration: 1.5,
+                duration: 1.2,
                 ease: 'power2.InOut'
             }
         ),
@@ -696,7 +696,7 @@ const scrollAnimation = () => {
                 x: 0,
                 autoAlpha: 1,
                 delay: 0.6,
-                duration: 1.5,
+                duration: 1.2,
                 stagger: 0.5,
                 ease: 'power2.InOut'
             }

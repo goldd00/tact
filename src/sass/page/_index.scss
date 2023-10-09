@@ -261,32 +261,12 @@
 }
 
 .Services {
-    position: relative;
     max-width: c.rem(2040);
     margin-inline: auto;
     background: c.$base-blue;
     border-radius: c.rem(32) c.rem(32) 0 0;
     &__wrap {
         padding-block: clamp(7.5rem, 5.115rem + 10.18vw, 10rem) calc(c.rem(40) + c.rem(32));
-        &:before,
-        &:after {
-            content: "";
-            position: absolute;
-            width: c.rem(35);
-            height: c.rem(35);
-            display: block;
-            background: c.$base-blue;
-            bottom: c.rem(-34);
-        }
-        &:before {
-            left: 0;
-            clip-path: path(
-            "M35 0H0V35C0 15.67 15.67 0 35 0Z");
-        }
-        &:after {
-            right: 0;
-            clip-path: path("M0 0H35V35C35 15.67 19.33 0 0 0Z");
-        }
     }
     .Title {
         margin-bottom: clamp(3.75rem, 2.557rem + 5.09vw, 5rem);
@@ -357,11 +337,31 @@
 }
 
 .Decoration {
+    position: relative;
     padding-block: c.rem(56);
     text-align: center;
     border-radius: c.rem(32) c.rem(32) 0 0;
     @media (min-width: c.$base-container) {
         boder-radius: none;
+    }
+    &:before,
+    &:after {
+        content: "";
+        position: absolute;
+        width: c.rem(35);
+        height: c.rem(35);
+        display: block;
+        background: c.$base-blue;
+        top: c.rem(-1);
+    }
+    &:before {
+        left: 0;
+        clip-path: path(
+        "M35 0H0V35C0 15.67 15.67 0 35 0Z");
+    }
+    &:after {
+        right: 0;
+        clip-path: path("M0 0H35V35C35 15.67 19.33 0 0 0Z");
     }
 }
 

@@ -12,7 +12,7 @@
         font-family: c.$base-font-redhat;
         font-size: clamp(2.875rem, 1.802rem + 4.58vw, 4rem);
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-        line-height: 1;
+        line-height: 1.2;
         & .char {
             transform: translateY(100px);
             transition: transfrom 0.5s;
@@ -22,7 +22,7 @@
     &__ja {
         font-size: c.rem(14);
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-        line-height: 1;
+        line-height: 1.2;
         & .char {
             transform: translateY(100px);
             transition: transfrom 0.5s;
