@@ -15,7 +15,7 @@ if( !function_exists('tact_wp_enqueue_scripts') ) {
 
             wp_enqueue_style(
                 'tact-style',
-                get_template_directory_uri() . '/dist/css/'.$style_css.'?ver'. $theme_ver, array(), '', 'all'
+                get_template_directory_uri() . '/dist/css/'.$style_css.'?upd='. date('YmdHis'), array(), '', 'all'
             );
 
             wp_enqueue_script(
