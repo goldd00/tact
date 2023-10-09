@@ -242,8 +242,8 @@
                                         );
                                         $myposts = get_posts( $args );
                                         foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
-                                        <li class="Info__item">
-                                            <a href="<?php the_permalink(); ?>" class="Info__item__link js_info" data-type="link">
+                                        <li class="Info__item js_info" data-type="link">
+                                            <a href="<?php the_permalink(); ?>" class="Info__item__link">
                                                 <div class="Info__item__date">
                                                     <time class="Info__item__date__time" datetime="<?php the_time('Y-m-d'); ?>"><?php the_time('y.m.d'); ?></time>
                                                 </div>

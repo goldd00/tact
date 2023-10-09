@@ -6,7 +6,7 @@
     <meta name="HandheldFriendly" content="true" />
     <meta name="format-detection" content="telephone=no" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="株式会社TACTは、企業の成長戦略をサポートすることを念頭に、マーケティング戦略の立案から施策実行までをワンストップで遂行。メデイア・デジタル・イベントプロモーション・クリエイティブ・共創（ビジネスアライアンス）など、複数の異なる要素を統合的、横断的に連携するソリューションを提供します。">
+    <?php echo_meta_description_tag(); ?>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,7 +20,7 @@
                 "@context": "http://schema.org",
                 "@type": "Corporation",
                 "name": "<?php bloginfo( 'name' ); ?>",
-                "description": "株式会社TACTは、企業の成長戦略をサポートすることを念頭に、マーケティング戦略の立案から施策実行までをワンストップで遂行。メデイア・デジタル・イベントプロモーション・クリエイティブ・共創（ビジネスアライアンス）など、複数の異なる要素を統合的、横断的に連携するソリューションを提供します。",
+                "description": "<?php echo get_bloginfo( 'description' ); ?>",
                 "logo": "<?php echo imdir(); ?>/common/logo.svg",
                 "url": "<?php echo home_url('/'); ?>",
                 "address": {
