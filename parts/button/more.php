@@ -1,8 +1,8 @@
-<div class="MoreBtn js_moreBtn js_info" data-type="link">
+<div class="MoreBtn js_moreBtn">
     <?php if(isset($args['link'])): ?>
-        <a href="<?php echo esc_url( home_url('/') ); ?><?php echo $args['link']; ?>" class="MoreBtn__link">
+        <a href="<?php echo esc_url( home_url('/') ); ?><?php echo $args['link']; ?>" class="MoreBtn__link js_info" data-type="link">
     <?php else: ?>
-        <a href="<?php echo esc_url( home_url('/') ); ?>" class="MoreBtn__link">
+        <a href="<?php echo esc_url( home_url('/') ); ?>" class="MoreBtn__link js_info" data-type="link">
     <?php endif; ?>
         <?php if(isset($args['text'])): ?>
         <span class="MoreBtn__link__text"><?php echo $args['text']; ?></span>
