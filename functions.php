@@ -9,6 +9,7 @@
     require_once 'library/functions/tact-information.php';
     require_once 'library/functions/tact-works.php';
     require_once 'library/functions/tact-minify-html.php';
+    require_once 'library/functions/tact-redirect.php';
 
     if( is_user_logged_in() ) {
         require_once 'library/functions/customizer.php';
