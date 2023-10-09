@@ -11,7 +11,7 @@
                 <?php if(have_posts()): ?>
                 <ul class="InfoArc__items">
                     <?php while(have_posts()): the_post(); ?>
-                    <li class="InfoArc__item">
+                    <li class="InfoArc__item js_info" data-type="link">
                         <a href="<?php the_permalink(); ?>" class="InfoArc__item__link">
                             <div class="InfoArc__item__date">
                                 <time class="InfoArc__item__date__time" datetime="<?php the_time('Y-m-d'); ?>"><?php the_time('y.m.d'); ?></time>
