@@ -1,5 +1,5 @@
 <ol class="Services__items">
-    <li id="anchor_corporate" class="Services__item Anchor js_fadeIn js_fadeItem">
+    <li id="anchor_corporate" class="Services__item Anchor js_fadeItem">
         <div class="Services__tmb">
             <img src="<?php echo imdir(); ?>/index/icon_support.svg" class="Services__tmb__img" alt="">
         </div>
@@ -19,7 +19,7 @@
             </li>
         </ul>
     </li>
-    <li id="anchor_marketing" class="Services__item Anchor js_fadeIn js_fadeItem">
+    <li id="anchor_marketing" class="Services__item Anchor js_fadeItem">
         <div class="Services__tmb">
             <img src="<?php echo imdir(); ?>/index/icon_marketing.svg" class="Services__tmb__img" alt="">
         </div>
@@ -33,7 +33,7 @@
             </li>
         </ul>
     </li>
-    <li id="anchor_advertising" class="Services__item Anchor js_fadeIn js_fadeItem">
+    <li id="anchor_advertising" class="Services__item Anchor js_fadeItem">
         <div class="Services__tmb">
             <img src="<?php echo imdir(); ?>/index/icon_advertising.svg" class="Services__tmb__img" alt="">
         </div>
@@ -50,7 +50,7 @@
             </li>
         </ul>
     </li>
-    <li id="anchor_production" class="Services__item Anchor js_fadeIn js_fadeItem">
+    <li id="anchor_production" class="Services__item Anchor js_fadeItem">
         <div class="Services__tmb">
             <img src="<?php echo imdir(); ?>/index/icon_content.svg" class="Services__tmb__img" alt="">
         </div>
@@ -64,7 +64,7 @@
             </li>
         </ul>
     </li>
-    <li id="anchor_digital" class="Services__item Anchor js_fadeIn js_fadeItem">
+    <li id="anchor_digital" class="Services__item Anchor js_fadeItem">
         <div class="Services__tmb">
             <img src="<?php echo imdir(); ?>/index/icon_experience.svg" class="Services__tmb__img" alt="">
         </div>
@@ -78,7 +78,7 @@
             </li>
         </ul>
     </li>
-    <li id="anchor_entertainment" class="Services__item Anchor js_fadeIn js_fadeItem">
+    <li id="anchor_entertainment" class="Services__item Anchor js_fadeItem">
         <div class="Services__tmb">
             <img src="<?php echo imdir(); ?>/index/icon_entertainment.svg" class="Services__tmb__img" alt="">
         </div>

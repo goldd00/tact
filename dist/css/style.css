@@ -1860,6 +1860,10 @@ body.active {
   }
 }
 
+.home .Services__item {
+  visibility: hidden;
+}
+
 .Decoration {
   position: relative;
   padding-block: 3.5rem;
