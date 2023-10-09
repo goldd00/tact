@@ -4,12 +4,12 @@
     display: none;
     @media (min-width: #{c.$base-width-md}) {
         position: fixed;
-        opacity: 0;
         right: 0;
         bottom: 0;
         display: block;
         width: clamp(5rem, 3.807rem + 5.09vw, 6.25rem);
         height: 100%;
+        visibility: hidden;
     }
     &__btn {
         @media (min-width: #{c.$base-width-md}) {

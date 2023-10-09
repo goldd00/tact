@@ -59,7 +59,7 @@
         gap: c.rem(16);
         position: absolute;
         bottom: c.rem(180);
-        opacity: 0;
+        visibility: hidden;
         @media (min-width: c.$base-width-lg) {
             bottom: c.rem(40);
         }
@@ -74,7 +74,7 @@
         flex-direction: column;
         padding-top: clamp(8.25rem, 6.938rem + 5.6vw, 9.625rem);
         gap: c.rem(32);
-        opacity: 0;
+        visibility: hidden;
         &__img {
             width: 100%;
             max-width: c.rem(1140);
@@ -89,7 +89,7 @@
         width: 100%;
         margin-block: auto;
         bottom: c.rem(40);
-        opacity: 0;
+        visibility: hidden;
         @media (min-width: c.$base-width-md) {
             width: calc(100% - c.rem(20));
         }
@@ -374,15 +374,16 @@
         position: fixed;
         top: 0;
         left: 0;
+        transform: translate(-50%, -50%);
         width: c.rem(666);
         object-fit: cover;
         aspect-ratio: 16/9;
         overflow: hidden;
-        opacity: 0;
-        margin-top: c.rem(-130);
-        margin-left: c.rem(-140);
+        visibility: hidden;
         &__wrap {
             position: relative;
+            aspect-ratio: 16/9;
+            overflow: hidden;
             &:before {
                 position: absolute;
                 top: 0;
@@ -414,9 +415,9 @@
     &__item {
         // container-type: inline-size;
         counter-increment: works 1;
-        border-top: 1px solid c.$base-white;
-        &:last-child {
-            border-bottom: 1px solid c.$base-white;
+        border-bottom: 1px solid c.$base-white;
+        &:first-child {
+            border-top: 1px solid c.$base-white;
         }
         &__wrap {
             display: grid;

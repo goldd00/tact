@@ -59,12 +59,12 @@
         <section>
             <div class="About Base">
                 <div class="About__wrap Base__wrap">
-                    <div id="anchor_about" class="Title Anchor">
+                    <div id="anchor_about" class="Title Anchor js_fadeIn js_fadeLeft">
                         <h2 class="Title__text">ABOUT <span class="Title__text__br">TACT</span></h2>
                         <p class="Title__ja">TACTについて</p>
                     </div>
 
-                    <ul id="anchor_origin" class="About__items Anchor">
+                    <ul id="anchor_origin" class="About__items Anchor js_fadeIn js_fadeLeft">
                         <li class="About__item">
                             <div class="About__intro">
                                 <p class="About__intro__logo">
@@ -99,11 +99,11 @@
 
                     <div class="About__msg">
                         <div class="About__msg__wrap">
-                            <h3 id="anchor_vision" class="About__msg__title Anchor">
+                            <h3 id="anchor_vision" class="About__msg__title Anchor js_fadeIn js_fadeRight">
                                 ビジネスをオーケスト<wbr>レーションする<br>
                                 カタリスト集団。
                             </h3>
-                            <p class="About__msg__text">
+                            <p class="About__msg__text js_fadeIn js_fadeRight">
                                 様々な企業の成長戦略をサポートすることを念頭に、<br>
                                 マーケティング戦略の立案から施策実行までをワンストップで遂行するとともに、メデイア・デジタル・イベントプロモーション・クリエイティブ・共創（ビジネスアライアンス）など、複数の異なる要素を統合的、横断的に連携できるソリューションの提供を事業の核としています。<br>
                                 弊社スタッフがカタリスト（catalyst=触媒）として、Orchestration（=調和のとれたプロジェクトチーム）を以て多様な専門分野とリレーションを行い、より良いマーケティングサービスを構築してまいります。
@@ -123,12 +123,12 @@
                 <div class="Services__wrap">
                     <div class="Base">
                         <div class="Base__wrap">
-                            <div id="anchor_whatwedo" class="Title Title--right Anchor">
+                            <div id="anchor_whatwedo" class="Title Title--right Anchor js_fadeIn js_fadeRight">
                                 <h2 class="Title__text">WHAT<span class="Title__text__br"> WE DO</span></h2>
                                 <p class="Title__ja">私たちが提供するもの</p>
                             </div>
 
-                            <p class="Services__catch">複数の異なる要素を統合的、横断的に連携できるソリューションの提供を事業の核としています。</p>
+                            <p class="Services__catch js_fadeIn js_fadeRight">複数の異なる要素を統合的、横断的に連携できるソリューションの提供を事業の核としています。</p>
 
                             <?php get_template_part('parts/services/cards'); ?>
 

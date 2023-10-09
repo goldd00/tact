@@ -456,6 +456,10 @@ body.active {
   background: #111;
 }
 
+.js_fadeIn {
+  visibility: hidden;
+}
+
 .Header {
   width: 100%;
   position: fixed;
@@ -905,12 +909,12 @@ body.active {
 @media (min-width: 768px) {
   .StickyBar {
     position: fixed;
-    opacity: 0;
     right: 0;
     bottom: 0;
     display: block;
     width: clamp(5rem, 3.807rem + 5.09vw, 6.25rem);
     height: 100%;
+    visibility: hidden;
   }
 }
 @media (min-width: 768px) {
@@ -1046,9 +1050,29 @@ body.active {
 .PageTitle__text {
   font-family: "Red Hat Display", sans-serif;
   font-size: clamp(2.875rem, 1.802rem + 4.58vw, 4rem);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  line-height: 1;
+}
+.PageTitle__text .char {
+  -webkit-transform: translateY(100px);
+          transform: translateY(100px);
+  -webkit-transition: transfrom 0.5s;
+  transition: transfrom 0.5s;
+  visibility: hidden;
 }
 .PageTitle__ja {
   font-size: 0.875rem;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  line-height: 1;
+}
+.PageTitle__ja .char {
+  -webkit-transform: translateY(100px);
+          transform: translateY(100px);
+  -webkit-transition: transfrom 0.5s;
+  transition: transfrom 0.5s;
+  visibility: hidden;
 }
 @media (min-width: 1100px) {
   .PageTitle {
@@ -1479,7 +1503,7 @@ body.active {
   gap: 1rem;
   position: absolute;
   bottom: 11.25rem;
-  opacity: 0;
+  visibility: hidden;
 }
 @media (min-width: 1100px) {
   .Kv__scroll {
@@ -1501,7 +1525,7 @@ body.active {
           flex-direction: column;
   padding-top: clamp(8.25rem, 6.938rem + 5.6vw, 9.625rem);
   gap: 2rem;
-  opacity: 0;
+  visibility: hidden;
 }
 .Kv__catch__img {
   width: 100%;
@@ -1516,7 +1540,7 @@ body.active {
   width: 100%;
   margin-block: auto;
   bottom: 2.5rem;
-  opacity: 0;
+  visibility: hidden;
 }
 @media (min-width: 768px) {
   .Kv__info {
@@ -1873,17 +1897,19 @@ body.active {
   position: fixed;
   top: 0;
   left: 0;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   width: 41.625rem;
   -o-object-fit: cover;
      object-fit: cover;
   aspect-ratio: 16/9;
   overflow: hidden;
-  opacity: 0;
-  margin-top: -8.125rem;
-  margin-left: -8.75rem;
+  visibility: hidden;
 }
 .Works__picture__wrap {
   position: relative;
+  aspect-ratio: 16/9;
+  overflow: hidden;
 }
 .Works__picture__wrap:before {
   position: absolute;
@@ -1914,10 +1940,10 @@ body.active {
 }
 .Works__item {
   counter-increment: works 1;
-  border-top: 1px solid white;
-}
-.Works__item:last-child {
   border-bottom: 1px solid white;
+}
+.Works__item:first-child {
+  border-top: 1px solid white;
 }
 .Works__item__wrap {
   display: grid;

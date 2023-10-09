@@ -1,5 +1,6 @@
 import { gsap } from 'gsap';
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import SplitType from 'split-type';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -76,6 +77,7 @@ const mouseInfo = () => {
         });
     });
 }
+mouseInfo();
 
 const worksHoverAnimation = () => {
 
@@ -116,7 +118,7 @@ const worksHoverAnimation = () => {
                 rotationX: 60 * Math.random() - 30,
                 rotationY: 100 * Math.random() - 50,
                 rotationZ: 20 * Math.random() - 10,
-                opacity: 1,
+                autoAlpha: 1,
             });
         });
 
@@ -135,6 +137,7 @@ const worksHoverAnimation = () => {
     });
 
 }
+worksHoverAnimation();
 
 const rotateCircle = () => {
     const elTarget = gsap.utils.toArray(".js_circle");
@@ -165,6 +168,7 @@ const rotateCircle = () => {
         })
     });
 }
+rotateCircle();
 
 const kvAnimation = () => {
     const elTarget = document.querySelectorAll('.Kv');
@@ -174,53 +178,57 @@ const kvAnimation = () => {
 
         tl.fromTo('.Kv__catch',
             {
-                x: -20
+                x: -20,
+                autoAlpha: 0
             },
             {
                 x: 0,
-                opacity: 1,
+                autoAlpha: 1,
                 delay: 0.15
             });
 
         tl.fromTo('.Header',
             {
-                opacity: 0,
                 y: -20
             },
             {
                 y: 0,
-                opacity: 1,
+                autoAlpha: 1,
                 delay: 0.1
             });
 
         tl.fromTo('.StickyBar',
             {
-                x: 20
+                x: 20,
+                autoAlpha: 0,
             },
             {
                 x: 0,
-                opacity: 1,
+                autoAlpha: 1,
             }, '<');
 
         tl.fromTo('.Kv__info',
             {
-                y: 20
+                y: 20,
+                autoAlpha: 0,
             },
             {
                 y: 0,
-                opacity: 1,
+                autoAlpha: 1,
             }, '<');
 
         tl.fromTo('.Kv__scroll',
             {
-                y: 20
+                y: 20,
+                autoAlpha: 0,
             },
             {
                 y: 0,
-                opacity: 1,
+                autoAlpha: 1,
             }, '<');
     }
 }
+kvAnimation();
 
 const hamburgerMenu = () => {
     const elTarget = document.getElementById('js_menuBtn');
@@ -240,6 +248,7 @@ const hamburgerMenu = () => {
         }
     });
 }
+hamburgerMenu();
 
 const marquee = () => {
     const elMarquee = document.querySelectorAll('.Marquee');
@@ -252,6 +261,7 @@ const marquee = () => {
         .to('.Marquee', { duration: 20, xPercent: -50, ease: 'none' })
         .set('.Marquee', { xPercent: 0});
 }
+marquee();
 
 const waveAnchor = () => {
     const elWave = document.querySelectorAll('.StickyBar');
@@ -478,6 +488,7 @@ const waveAnchor = () => {
         }
     });
 }
+waveAnchor();
 
 const scrollBar = () => {
     const elScroll = document.querySelectorAll('.Kv__scroll');
@@ -510,6 +521,7 @@ const scrollBar = () => {
         y: 108
     });
 }
+scrollBar();
 
 const rotateBg = () => {
     const elTarget = document.querySelectorAll('#js_gradientBg')
@@ -529,6 +541,7 @@ const rotateBg = () => {
         rotation: 360 
     })
 }
+rotateBg();
 
 const mouseTrail = () => {
     if( !isPc() ) {
@@ -592,14 +605,103 @@ const mouseTrail = () => {
         leader = createLine(leader, i);
     }
 }
-
-kvAnimation();
-scrollBar();
-waveAnchor();
-rotateBg();
 mouseTrail();
-mouseInfo();
-marquee();
-hamburgerMenu();
-rotateCircle();
-worksHoverAnimation();
+
+const pageTitleAnimation = () => {
+
+    const elTarget = document.querySelectorAll('.PageTitle');
+
+    if( !elTarget.length ) {
+        return;
+    }
+
+    let pageTitle = new SplitType('.PageTitle__text', {
+        types: 'lines, words, chars',
+        tagName: 'span'
+    });
+
+    let pageTitleJa = new SplitType('.PageTitle__ja', {
+        types: 'lines, words, chars',
+        tagName: 'span'
+    });
+
+    gsap.to('.PageTitle__text .char', {
+        y: 0,
+        stagger: 0.05,
+        delay: 0.15,
+        duration: 0.45,
+        autoAlpha: 1,
+        ease: 'power2.inOut',
+    });
+
+    gsap.to('.PageTitle__ja .char', {
+        y: 0,
+        stagger: 0.05,
+        delay: 0.15,
+        duration: 0.45,
+        autoAlpha: 1,
+        ease: 'power2.inOut',
+    });
+}
+pageTitleAnimation();
+
+const scrollAnimation = () => {
+    const elTarget = document.querySelectorAll('.Index');
+
+    if( !elTarget.length ) {
+        return;
+    }
+
+    ScrollTrigger.batch('.js_fadeLeft', {
+        onEnter: batch => gsap.fromTo(batch,
+            {
+                x: -50,
+                autoAlpha: 0,
+            },
+            {
+                x: 0,
+                autoAlpha: 1,
+                delay: 0.6,
+                duration: 1.5,
+                ease: 'power2.InOut'
+            }
+        ),
+        once: true
+    });
+
+    ScrollTrigger.batch('.js_fadeRight', {
+        onEnter: batch => gsap.fromTo(batch,
+            {
+                x: +50,
+                autoAlpha: 0,
+            },
+            {
+                x: 0,
+                autoAlpha: 1,
+                delay: 0.6,
+                duration: 1.5,
+                ease: 'power2.InOut'
+            }
+        ),
+        once: true
+    });
+
+    ScrollTrigger.batch('.js_fadeItem', {
+        onEnter: batch => gsap.fromTo(batch,
+            {
+                y: -50,
+                autoAlpha: 0,
+            },
+            {
+                x: 0,
+                autoAlpha: 1,
+                delay: 0.6,
+                duration: 1.5,
+                stagger: 0.5,
+                ease: 'power2.InOut'
+            }
+        ),
+        once: true
+    });
+}
+scrollAnimation();
