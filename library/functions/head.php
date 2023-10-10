@@ -60,14 +60,14 @@ function tact_meta_description()
     if( is_front_page() ) {
         $description = get_bloginfo( 'description' );
     }elseif( is_single() ) {
-      if ( $post->post_excerpt ) {
-        $description = $post->post_excerpt;
-      } else {
-        $description = strip_tags($post->post_content);
-        $description = str_replace("\n", "", $description);
-        $description = str_replace("\r", "", $description);
-        $description = mb_substr($description, 0, 100) . "...";
-      }
+        if ( $post->post_excerpt ) {
+            $description = $post->post_excerpt;
+        } else {
+            $description = strip_tags($post->post_content);
+            $description = str_replace("\n", "", $description);
+            $description = str_replace("\r", "", $description);
+            $description = mb_substr($description, 0, 100) . "...";
+        }
     }elseif( is_post_type_archive('works') ) {
         $description = get_bloginfo('name').'のこれまでの仕事を掲載しています。';
     }elseif( is_post_type_archive('information') ) {

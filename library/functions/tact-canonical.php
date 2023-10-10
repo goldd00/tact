@@ -3,8 +3,8 @@
  * canonical設置
  */ 
 
- function add_canonical()
- {
+function add_canonical()
+{
     if( is_home() || is_front_page() ) {
 		$canonical = home_url('/');
 	} elseif ( is_post_type_archive() ) {
@@ -23,7 +23,7 @@
 		$canonical = home_url('/');
 	}
     echo '<link rel="canonical" href="'.$canonical.'">'."\n";
- }
+}
 
- remove_action('wp_head', 'rel_canonical');
- add_action( 'wp_head', 'add_canonical' );
+remove_action('wp_head', 'rel_canonical');
+add_action( 'wp_head', 'add_canonical' );

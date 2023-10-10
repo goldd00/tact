@@ -50,13 +50,13 @@ add_action( 'init', 'create_works_type' );
 
 function works_post_type_link( $link, $post ){
     if ( $post->post_type === 'works' ) {
-      return home_url( '/works/' . $post->ID );
+        return home_url( '/works/' . $post->ID );
     } else {
-      return $link;
+        return $link;
     }
 }
 add_filter( 'post_type_link', 'works_post_type_link', 1, 2 );
-  
+
 function works_rewrite_rules_array( $rules ) {
     $new_rewrite_rules = array( 
         'works/([0-9]+)/?$' => 'index.php?post_type=works&p=$matches[1]',

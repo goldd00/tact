@@ -51,13 +51,13 @@ add_action( 'init', 'create_information_type' );
 
 function information_post_type_link( $link, $post ){
     if ( $post->post_type === 'information' ) {
-      return home_url( '/information/' . $post->ID );
+        return home_url( '/information/' . $post->ID );
     } else {
-      return $link;
+        return $link;
     }
 }
 add_filter( 'post_type_link', 'information_post_type_link', 1, 2 );
-  
+
 function information_rewrite_rules_array( $rules ) {
     $new_rewrite_rules = array( 
         'information/([0-9]+)/?$' => 'index.php?post_type=information&p=$matches[1]',

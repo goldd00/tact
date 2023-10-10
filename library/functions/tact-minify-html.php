@@ -1,13 +1,11 @@
 <?php
 class WP_HTML_Compression
 {
-    // Settings
     protected $compress_css = true;
     protected $compress_js = true;
     protected $info_comment = true;
     protected $remove_comments = true;
 
-    // Variables
     protected $html;
     public function __construct($html)
     {
@@ -36,7 +34,6 @@ class WP_HTML_Compression
         preg_match_all($pattern, $html, $matches, PREG_SET_ORDER);
         $overriding = false;
         $raw_tag = false;
-        // Variable reused for output
         $html = '';
         foreach ($matches as $token) {
             $tag = (isset($token['tag'])) ? strtolower($token['tag']) : null;
@@ -51,11 +48,9 @@ class WP_HTML_Compression
                 } else if ($content == '<!--wp-html-compression no compression-->') {
                     $overriding = !$overriding;
 
-                    // Don't print the comment
                     continue;
                 } else if ($this->remove_comments) {
                     if (!$overriding && $raw_tag != 'textarea') {
-                        // Remove any HTML comments, except MSIE conditional comments
                         $content = preg_replace('/<!--(?!\s*(?:\[if [^\]]+]|<!|>))(?:(?!-->).)*-->/s', '', $content);
                     }
                 }
@@ -70,12 +65,8 @@ class WP_HTML_Compression
                     } else {
                         $strip = true;
 
-                        // Remove any empty attributes, except:
-                        // action, alt, content, src
                         $content = preg_replace('/(\s+)(\w++(?<!\baction|\balt|\bcontent|\bsrc)="")/', '$1', $content);
 
-                        // Remove any space before the end of self-closing XHTML tags
-                        // JavaScript excluded
                         $content = str_replace(' />', '/>', $content);
                     }
                 }

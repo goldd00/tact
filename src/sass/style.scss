@@ -13,9 +13,9 @@
 @use 'module/contact';
 @use 'module/mouseinfo';
 
-@use 'page/index'; //トップ
-@use 'page/servicesarc'; //サービス
-@use 'page/infoarc'; //お知らせ(アーカイブ)
-@use 'page/infosingle'; //お知らせ(記事)
-@use 'page/worksarc'; //実績(アーカイブ)
-@use 'page/aboutsingle'; //Tactについて
+@use 'page/index';          // トップ
+@use 'page/servicesarc';    // サービス
+@use 'page/infoarc';        // お知らせ(アーカイブ)
+@use 'page/infosingle';     // お知らせ(記事)
+@use 'page/worksarc';       // 実績(アーカイブ)
+@use 'page/aboutsingle';    // Tactについて

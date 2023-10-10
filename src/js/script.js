@@ -280,7 +280,6 @@ const waveAnchor = () => {
                 'className': 'active',
                 'toggleActions': 'restart none none none'
             },
-            // 'markers': true
         }
     });
 
@@ -293,7 +292,6 @@ const waveAnchor = () => {
                 'className': 'active',
                 'toggleActions': 'restart none none none'
             },
-            // 'markers': true
         }
     });
 
@@ -307,7 +305,6 @@ const waveAnchor = () => {
                 'className': 'active',
                 'toggleActions': 'restart none none none'
             },
-            // 'markers': true
         }
     });
 
@@ -321,7 +318,6 @@ const waveAnchor = () => {
                 'className': 'active',
                 'toggleActions': 'restart none none none'
             },
-            // 'markers': true
         }
     });
 
@@ -335,7 +331,6 @@ const waveAnchor = () => {
                 'className': 'active',
                 'toggleActions': 'restart none none none'
             },
-            // 'markers': true
         }
     });
 
@@ -349,7 +344,6 @@ const waveAnchor = () => {
                 'className': 'active',
                 'toggleActions': 'restart none none none'
             },
-            // 'markers': true
         }
     });
 
@@ -363,7 +357,6 @@ const waveAnchor = () => {
                 'className': 'active',
                 'toggleActions': 'restart none none none'
             },
-            // 'markers': true
         }
     });
 
@@ -377,7 +370,6 @@ const waveAnchor = () => {
                 'className': 'active',
                 'toggleActions': 'restart none none none'
             },
-            // 'markers': true
         }
     });
 
@@ -391,7 +383,6 @@ const waveAnchor = () => {
                 'className': 'active',
                 'toggleActions': 'restart none none none'
             },
-            // 'markers': true
         }
     });
 
@@ -405,7 +396,6 @@ const waveAnchor = () => {
                 'className': 'active',
                 'toggleActions': 'restart none none none'
             },
-            // 'markers': true
         }
     });
 
@@ -419,7 +409,6 @@ const waveAnchor = () => {
                 'className': 'active',
                 'toggleActions': 'restart none none none'
             },
-            // 'markers': true
         }
     });
 
@@ -432,7 +421,6 @@ const waveAnchor = () => {
                 'className': 'active',
                 'toggleActions': 'restart none none none'
             },
-            // 'markers': true
         }
     });
 
@@ -445,7 +433,6 @@ const waveAnchor = () => {
                 'className': 'active',
                 'toggleActions': 'restart none none none'
             },
-            // 'markers': true
         }
     });
 
@@ -458,7 +445,6 @@ const waveAnchor = () => {
                 'className': 'active',
                 'toggleActions': 'restart none none none'
             },
-            // 'markers': true
         }
     });
 
@@ -471,7 +457,6 @@ const waveAnchor = () => {
                 'className': 'active',
                 'toggleActions': 'restart none none none'
             },
-            // 'markers': true
         }
     });
 
@@ -484,7 +469,6 @@ const waveAnchor = () => {
                 'className': 'active',
                 'toggleActions': 'restart none none none'
             },
-            // 'markers': true
         }
     });
 }
@@ -496,7 +480,7 @@ const scrollBar = () => {
     if( !elScroll.length ) {
         return;
     }
- 
+
     gsap.timeline({
         y: 0,
         repeat: -1
@@ -569,7 +553,7 @@ const mouseTrail = () => {
     const createLine = (leader, i) => {
         let line = document.createElementNS(svgns, 'line');
         root.appendChild(line);
-  
+
         gsap.set(line, { x: -15, y: -15, opacity: (total - i) / total });
         let pos = gsap.getProperty(line);
 
