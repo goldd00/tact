@@ -33,6 +33,7 @@
             }
         </script>
     <?php endif; ?>
+    <?php add_GA_code(); ?>
 </head>
 <body <?php body_class() ?> id="js_hidden">
     <?php wp_body_open(); ?>
