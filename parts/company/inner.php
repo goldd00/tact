@@ -7,7 +7,7 @@
         <div class="Profile__table">
             <div class="Profile__table__row">
                 <div class="Profile__table__cell">
-                    <p class="Profile__table__title">社名</p>
+                    <p class="Profile__table__title">会社名</p>
                 </div>
                 <div class="Profile__table__cell">
                     <p class="Profile__table__desc"><?php bloginfo( 'name' ); ?> / TACT Co., Ltd.</p>
@@ -15,10 +15,22 @@
             </div>
             <div class="Profile__table__row">
                 <div class="Profile__table__cell">
+                    <p class="Profile__table__title">所在地</p>
+                </div>
+                <div class="Profile__table__cell">
+                    <p class="Profile__table__desc">
+                        〒150-0002<br>
+                        東京都渋谷区渋谷1-10-7グローリア宮益坂Ⅲ1103<br>
+                        電話:03-6427-3452
+                    </p>
+                </div>
+            </div>
+            <div class="Profile__table__row">
+                <div class="Profile__table__cell">
                     <p class="Profile__table__title">代表者</p>
                 </div>
                 <div class="Profile__table__cell">
-                    <p class="Profile__table__desc">代表取締役CEO 山本 嘉一</p>
+                    <p class="Profile__table__desc">代表取締役 山本 嘉一</p>
                 </div>
             </div>
             <div class="Profile__table__row">
@@ -34,7 +46,7 @@
                     <p class="Profile__table__title">資本金</p>
                 </div>
                 <div class="Profile__table__cell">
-                    <p class="Profile__table__desc">5,000,000円</p>
+                    <p class="Profile__table__desc">500万円</p>
                 </div>
             </div>
             <div class="Profile__table__row">
@@ -47,21 +59,10 @@
             </div>
             <div class="Profile__table__row">
                 <div class="Profile__table__cell">
-                    <p class="Profile__table__title">電話</p>
+                    <p class="Profile__table__title">主要取引先</p>
                 </div>
                 <div class="Profile__table__cell">
-                    <p class="Profile__table__desc">03-6871-9360</p>
-                </div>
-            </div>
-            <div class="Profile__table__row">
-                <div class="Profile__table__cell">
-                    <p class="Profile__table__title">所在地</p>
-                </div>
-                <div class="Profile__table__cell">
-                    <p class="Profile__table__desc">
-                        〒150-0002<br>
-                        東京都渋谷区恵比寿南1-1-1 ヒューマックス恵比寿ビル8F
-                    </p>
+                    <p class="Profile__table__desc">独立行政法人中小企業基盤整備機構、テラメディア株式会社、国内外広告代理店、国内外IT企業、他</p>
                 </div>
             </div>
         </div>

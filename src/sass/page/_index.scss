@@ -343,6 +343,8 @@
 
 .Decoration {
     position: relative;
+    max-width: c.rem(2040);
+    margin-inline: auto;
     padding-block: c.rem(56);
     text-align: center;
     border-radius: c.rem(32) c.rem(32) 0 0;

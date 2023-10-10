@@ -1866,6 +1866,8 @@ body.active {
 
 .Decoration {
   position: relative;
+  max-width: 127.5rem;
+  margin-inline: auto;
   padding-block: 3.5rem;
   text-align: center;
   border-radius: 2rem 2rem 0 0;
