@@ -2,7 +2,7 @@
 ![Static Badge](https://img.shields.io/badge/theme-v1.0.0-blue?logo=wordpress)
 ![Static Badge](https://img.shields.io/badge/npm-v9.6.4-red?logo=npm)
 
-Tact公式 Wordpress Theme
+TactのWordpressテーマ
 
 ## 使用方法
 ```bash
