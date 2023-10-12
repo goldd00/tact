@@ -8,8 +8,36 @@
         <div class="AboutSingle__outer">
             <div class="AboutSingle__wrap Base">
                 <div class="Base__wrap">
+
                     <section>
                         <div class="AboutSingle__section AboutSingle__section--notPd">
+                            <div class="AboutSingle__title">
+                                <h2 class="AboutSingle__title__text"><span class="AboutSingle__title__circle">BACKGROUND</span></h2>
+                            </div>
+                            <div class="AboutSingle__desc">
+                                <div class="AboutSingle__msg">
+                                    <h3 class="AboutSingle__msg__title">事業開始の経緯</h3>
+                                    <p class="AboutSingle__msg__text">
+                                        約30年にわたって国内広告代理店及び外資広告会社にて、IMC（Integrated Marketing Communication）とExperience Marketing領域で様々な業種のマーケティング戦略に携わってきましたが、昨今の社会環境の変化により、多くの企業は業務改革やマーケティングコストの見直しを迫られてきました。<br>
+                                        前職時でもクライアント企業のビジネス変化を目の当たりしてきたことで、将来は、「デジタルを活用した業務効率化」が中小企業の成長の為には必要だと実感し、自身のマーケティングスキル、デジタルツール開発ノウハウを活かし、様々な企業の為に、社会環境変容に左右されないビジネス環境の構築を支援することを目的に会社設立に至りました。<br>
+                                        そのため「テクノロジとマーケティング戦略で日本の未来創造の基盤となる豊かなコミュニケーション社会の発展に貢献する。」を弊社ミッションに掲げています。<br>
+
+                                        もうひとつの理由は、国内賃金上昇率の停滞です。<br>
+                                        ニュースで話題になった「海外で働く日本人すし職人の年収が1,000万円以上」とか、円安に振れたことや様々な企業で海外との賃金格差が生まれたことです。<br>
+                                        この現状国内経済の景気後退局面への対策を最後の社会貢献として、人的資本経営の変革を実践すべく<br>
+                                        <br>
+                                        1. 若者・女性の賃金向上<br>
+                                        2. 多様性及びグローバル視点の育成・強化<br>
+                                        3. ビジネススキル・テクノロジに対応すべく「知識・経験」の提供＝ヤングビジネスマン、女性の自律性の向上<br>
+                                        を念頭にしたビジネスを展開することも弊社ミッションとして展開してまいります。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section>
+                        <div class="AboutSingle__section">
                             <div class="AboutSingle__title">
                                 <h2 class="AboutSingle__title__text"><span class="AboutSingle__title__circle">MISSION</span></h2>
                             </div>
@@ -39,6 +67,26 @@
                             </div>
                         </div>
                     </section>
+
+                    <section>
+                        <div class="AboutSingle__section">
+                            <div class="AboutSingle__title">
+                                <h2 class="AboutSingle__title__text"><span class="AboutSingle__title__circle">CORE VALUE</span></h2>
+                            </div>
+                            <div class="AboutSingle__desc">
+                                <div class="AboutSingle__msg">
+                                    <ul class="AboutSingle__msg__items">
+                                        <li class="AboutSingle__msg__item">物事を様々な視点で多角的に考察し「それは重要か？」＝重要指向で考えよう。</li>
+                                        <li class="AboutSingle__msg__item">創造的で、かつオープン・マインドで業務に取り組もう。</li>
+                                        <li class="AboutSingle__msg__item">リスクを恐れず、遊び心持ってクリエイティビティを発揮しよう。</li>
+                                        <li class="AboutSingle__msg__item">社会変化に対応できるよう、トレンドやテクノロジに敏感でいよう。</li>
+                                        <li class="AboutSingle__msg__item">顧客・取引先・同僚へのリスペクトを忘れず、オープンで肯定的な姿勢を持とう。</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
 
                     <section>
                         <div class="AboutSingle__section AboutSingle__section--notBdr">
@@ -79,6 +127,7 @@
                             </div>
                         </div>
                     </section>
+
                 </div>
             </div>
         </div>

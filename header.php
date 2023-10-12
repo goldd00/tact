@@ -21,11 +21,12 @@
                 "@type": "Corporation",
                 "name": "<?php bloginfo( 'name' ); ?>",
                 "description": "<?php echo get_bloginfo( 'description' ); ?>",
-                "logo": "<?php echo imdir(); ?>/common/logo.svg",
+                "logo": "<?php echo imdir(); ?>/common/logo_schema.png",
+                "telephone": "03-6427-3452",
                 "url": "<?php echo home_url('/'); ?>",
                 "address": {
                     "@type": "PostalAddress",
-                    "streetAddress": "渋谷区恵比寿南1-1-1 ヒューマックス恵比寿ビル8F",
+                    "streetAddress": "渋谷区渋谷1-10-7グローリア宮益坂Ⅲ1103",
                     "addressLocality": "東京都",
                     "postalCode": "1500002",
                     "addressCountry": "日本"

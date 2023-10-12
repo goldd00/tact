@@ -59,7 +59,7 @@ const mouseInfo = () => {
                     scale: 0
                 },
                 {
-                    scale: 1
+                    scale: 1,
                 }
             );
         });
@@ -104,6 +104,9 @@ const worksHoverAnimation = () => {
         });
 
         target.addEventListener('mouseenter', (e) => {
+            const x = e.clientX;
+            const y = e.clientY;
+
             elTmbImg.setAttribute('src', e.target.dataset.src);
 
             gsap.to('#js_mouseTrail',
@@ -115,6 +118,8 @@ const worksHoverAnimation = () => {
 
             gsap.to('#js_worksTmb', {
                 ease: "power2.out",
+                x: x,
+                y: y,
                 rotationX: 60 * Math.random() - 30,
                 rotationY: 100 * Math.random() - 50,
                 rotationZ: 20 * Math.random() - 10,
@@ -645,8 +650,8 @@ const scrollAnimation = () => {
             {
                 x: 0,
                 autoAlpha: 1,
-                delay: 0.6,
-                duration: 1.2,
+                delay: 0.5,
+                duration: 0.5,
                 ease: 'power2.InOut'
             }
         ),
@@ -662,8 +667,8 @@ const scrollAnimation = () => {
             {
                 x: 0,
                 autoAlpha: 1,
-                delay: 0.6,
-                duration: 1.2,
+                delay: 0.5,
+                duration: 0.5,
                 ease: 'power2.InOut'
             }
         ),
@@ -679,8 +684,8 @@ const scrollAnimation = () => {
             {
                 x: 0,
                 autoAlpha: 1,
-                delay: 0.6,
-                duration: 1.2,
+                delay: 0.5,
+                duration: 0.5,
                 stagger: 0.5,
                 ease: 'power2.InOut'
             }

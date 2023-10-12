@@ -62,7 +62,7 @@
         <!-- /Header__nav --></nav>
 
         <div class="Header__contactBtn">
-            <a href="mailto:yyamamoto@tact-japan.com?subject=&lt;お問い合わせ内容とご連絡先をお送りください&gt;" class="Header__contactBtn__link js_info" data-type="mail">
+            <a href="mailto:info@tact-japan.com?subject=&lt;お問い合わせ内容とご連絡先をお送りください&gt;" class="Header__contactBtn__link js_info" data-type="mail">
                 <img src="<?php echo imdir(); ?>/common/icon_mail.svg" class="Header__contactBtn__img" alt="">
                 <p class="Header__contactBtn__text">CONTACT</p>
             </a>

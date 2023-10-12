@@ -2626,6 +2626,26 @@ body.active {
     display: block;
   }
 }
+.AboutSingle__msg__items {
+  counter-reset: msg 0;
+}
+.AboutSingle__msg__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  line-height: 2;
+}
+.AboutSingle__msg__item:not(:last-child) {
+  margin-bottom: 0.625rem;
+}
+.AboutSingle__msg__item:before {
+  counter-increment: msg 1;
+  content: counter(msg) ".";
+  padding-right: 0.625rem;
+}
 .AboutSingle__msg__text {
   font-size: 0.875rem;
   line-height: 2;

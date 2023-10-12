@@ -134,6 +134,22 @@
                 }
             }
         }
+        &__items {
+            counter-reset: msg 0; 
+        }
+        &__item {
+            display: flex;
+            align-items: baseline;
+            line-height: 2;
+            &:not(:last-child) {
+                margin-bottom: c.rem(10);
+            }
+            &:before {
+                counter-increment: msg 1; 
+                content: counter(msg)'.';
+                padding-right: c.rem(10);
+            }
+        }
         &__text {
             font-size: c.rem(14);
             line-height: 2;
