@@ -2012,6 +2012,7 @@ body.active {
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 1;
   overflow: hidden;
+  word-break: break-all;
 }
 .Works__item__info__tag {
   display: -webkit-box;
@@ -2661,3 +2662,5 @@ body.active {
 .AboutSingle .Profile .Title {
   margin-bottom: 3.75rem;
 }
+
+/*# sourceMappingURL=style.css.map*/
