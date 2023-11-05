@@ -22,6 +22,9 @@
                             <li class="Footer__nav__item">
                                 <a href="<?php echo esc_url( home_url('/') ); ?>information" class="Footer__nav__link js_info" data-type="link">INFORMATION</a>
                             </li>
+                            <li class="Footer__nav__item">
+                                <a href="<?php echo esc_url( home_url('/') ); ?>securitypolicy" class="Footer__nav__link js_info" data-type="link">SECURITY POLICY</a>
+                            </li>
                         </ul>
                     </nav>
 

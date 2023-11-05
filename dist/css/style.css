@@ -2663,4 +2663,31 @@ body.active {
   margin-bottom: 3.75rem;
 }
 
-/*# sourceMappingURL=style.css.map*/
+.SecuritySingle__wrap {
+  max-width: 61.25rem;
+  margin-inline: auto;
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+.SecuritySingle__title {
+  margin-bottom: 4.5rem;
+  text-align: center;
+  font-size: 1.5rem;
+}
+.SecuritySingle__head {
+  margin-bottom: 4.5rem;
+}
+.SecuritySingle__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 4.5rem;
+  gap: 3rem;
+}
+.SecuritySingle__btm {
+  text-align: right;
+}

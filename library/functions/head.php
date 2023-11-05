@@ -74,6 +74,8 @@ function tact_meta_description()
         $description = get_bloginfo('name').'のお知らせを掲載しています。';
     }elseif( is_page('aboutus') ) {
         $description = get_bloginfo('name').'はテクノロジとマーケティング戦略で、日本の未来創造の基盤となる豊かなコミュニケーション社会の発展に貢献します。';
+    }elseif( is_page('securitypolicy') ) {
+        $description = get_bloginfo('name').'の情報セキュリティ基本方針を掲載しています。';
     }elseif( is_page('services') ) {
         $description = get_bloginfo('name').'は複数の異なる要素を統合的、横断的に連携できるソリューションの提供を事業の核としています。';
     }
@@ -106,11 +108,21 @@ function tact_meta_ogp()
         $ogp_img  = '';
         $insert   = '';
         if( is_singular() ) {
-            setup_postdata($post);
-            $ogp_ttl  = $post->post_title;
-            $ogp_desc = mb_substr(get_the_excerpt(), 0, 100);
-            $ogp_url  = get_permalink();
-            wp_reset_postdata();
+            if( is_page('securitypolicy') ) {
+                $ogp_ttl  = 'SECURITY POLICY | '.get_bloginfo('name');
+                $ogp_desc = get_bloginfo('name').'の情報セキュリティ基本方針を掲載しています。';
+                $ogp_url  = get_permalink();
+            } elseif(  is_page('aboutus') ) {
+                $ogp_ttl  = 'ABOUT US | '.get_bloginfo('name');
+                $ogp_desc = get_bloginfo('name').'はテクノロジとマーケティング戦略で、日本の未来創造の基盤となる豊かなコミュニケーション社会の発展に貢献します。';
+                $ogp_url  = get_permalink();
+            } else {
+                setup_postdata($post);
+                $ogp_ttl  = $post->post_title;
+                $ogp_desc = mb_substr(get_the_excerpt(), 0, 100);
+                $ogp_url  = get_permalink();
+                wp_reset_postdata();
+            }
         } elseif ( is_front_page() || is_home() ) {
             $ogp_ttl  = get_bloginfo('name');
 			$ogp_desc = get_bloginfo('description');
@@ -122,10 +134,6 @@ function tact_meta_ogp()
         } elseif( is_post_type_archive('information') ) {
             $ogp_ttl  = 'INFORMATION | '.get_bloginfo('name');
             $ogp_desc = get_bloginfo('name').'のお知らせを掲載しています。';
-            $ogp_url  = get_permalink();
-        } elseif( is_post_type_archive('aboutus') ) {
-            $ogp_ttl  = 'ABOUT US | '.get_bloginfo('name');
-            $ogp_desc = get_bloginfo('name').'はテクノロジとマーケティング戦略で、日本の未来創造の基盤となる豊かなコミュニケーション社会の発展に貢献します。';
             $ogp_url  = get_permalink();
         } elseif( is_post_type_archive('services') ) {
             $ogp_ttl  = 'SERVICE | '.get_bloginfo('name');

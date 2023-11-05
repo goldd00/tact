@@ -55,6 +55,12 @@
                         <meta itemprop="position" content="5" />
                     </a>
                 </li>
+                <li class="Header__nav__item <?php if( is_page('securitypolicy') ): ?>active<?php endif; ?>" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <a itemprop="item" href="<?php echo esc_url( home_url('/') ); ?>securitypolicy" class="Header__nav__item__link js_info" data-type="link">
+                        <span itemprop="name">SECURITY POLICY</span>
+                        <meta itemprop="position" content="2" />
+                    </a>
+                </li>
             </ul>
 
             <?php get_template_part('parts/button/contact') ?>
