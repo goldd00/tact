@@ -11,7 +11,7 @@
                 <div class="SecuritySingle__wrap">
                     <h2 class="SecuritySingle__title">情報セキュリティ基本方針</h2>
                     <p class="SecuritySingle__head">
-                        株式会社Ｔａｃｔ（以下、当社）は、お客様からお預かりした情報資産を事故・災害・犯罪などの脅威から守り、<br>
+                        株式会社Tact（以下、当社）は、お客様からお預かりした情報資産を事故・災害・犯罪などの脅威から守り、<br>
                         お客様ならびに社会の信頼に応えるべく、以下の方針に基づき全社で情報セキュリティに取り組みます。
                     </p>
                     <ol class="SecuritySingle__items">
