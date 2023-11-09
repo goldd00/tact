@@ -38,7 +38,7 @@
                     <p class="Profile__table__title">設立</p>
                 </div>
                 <div class="Profile__table__cell">
-                    <p class="Profile__table__desc">2023年1月</p>
+                    <p class="Profile__table__desc">2023年1月6日</p>
                 </div>
             </div>
             <div class="Profile__table__row">
